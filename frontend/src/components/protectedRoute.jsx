@@ -8,7 +8,7 @@ function ProtectedRoute({ role, children }) {
 
     useEffect(() => {
 
-        fetch(`${import.meta.env.VITE_API_URL}/api/auth/me`, {
+        fetch('http://localhost:5000/api/auth/me', {
             credentials: 'include'
         })
         .then(async (response) => {
