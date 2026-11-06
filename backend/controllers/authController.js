@@ -114,6 +114,7 @@ exports.login = async (req, res) => {
             httpOnly: true,
             secure: true,
             sameSite: 'none',
+            partitioned: true,
             maxAge: 24 * 60 * 60 * 1000
         });
 
